@@ -23,7 +23,9 @@ o	Lack of Event Risk Protection: The document contains no "Change of Control Put
 o	No Cross-Default: The "Events of Default" are limited to specific note series; a default on one series does not necessarily trigger a default for others. 
 o	Unsecured Ranking: These are unsecured obligations, ranking equally with other unsecured debt but structurally subordinate to any secured debt.
 
-3. Conclusion & Strategy
+![Ford Covenant Analysis](outputs/Ford_Covenant_Summary_Table.png)
+
+4. Conclusion & Strategy
 The combination of a high-pressure $51.8B maturity wall and minimal legal protection suggests that the market may be underpricing the potential for structural subordination. A systematic credit strategy should favor issuers with flatter maturity profiles or higher "Covenant Strength Scores" to mitigate the risk of refinancing-driven distress.
 
 ![Ford Maturity Wall 2026](outputs/ford_maturity_wall_2026.png)
