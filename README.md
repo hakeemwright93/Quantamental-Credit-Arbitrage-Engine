@@ -25,3 +25,5 @@ o	Unsecured Ranking: These are unsecured obligations, ranking equally with other
 
 3. Conclusion & Strategy
 The combination of a high-pressure $51.8B maturity wall and minimal legal protection suggests that the market may be underpricing the potential for structural subordination. A systematic credit strategy should favor issuers with flatter maturity profiles or higher "Covenant Strength Scores" to mitigate the risk of refinancing-driven distress.
+
+![Ford Maturity Wall 2026](outputs/ford_maturity_wall_2026.png)
