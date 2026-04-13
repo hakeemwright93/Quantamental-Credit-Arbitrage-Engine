@@ -29,3 +29,11 @@ o	Unsecured Ranking: These are unsecured obligations, ranking equally with other
 The combination of a high-pressure $51.8B maturity wall and minimal legal protection suggests that the market may be underpricing the potential for structural subordination. A systematic credit strategy should favor issuers with flatter maturity profiles or higher "Covenant Strength Scores" to mitigate the risk of refinancing-driven distress.
 
 ![Ford Maturity Wall 2026](outputs/ford_maturity_wall.png)
+
+Phase 2: Sector-Wide Relative Value (Auto Captives)
+
+In this phase, I expanded the engine to compare Ford Credit against its primary peers (GM and Toyota) to identify mispriced risk.
+
+Key Finding: Ford Credit is a risk outlier. While it offers the highest yield (5.8%), its Risk Score (12.18) is significantly higher than GM Financial (8.50), making it "expensive" on a risk-adjusted basis.
+
+
