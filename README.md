@@ -1,27 +1,42 @@
 # Quantamental-Credit-Arbitrage-Engine
 
-EXECUTIVE SUMMARY: Systematic Credit Risk & Covenant Analysis
-
-Issuer: Ford Motor Credit Company LLC (FMCC)
+EXECUTIVE SUMMARY: This project demonstrates a systematic "Quantamental" workflow—synthesizing unstructured legal data with quantitative debt schedules to identify mispriced credit risk. By analyzing Ford Motor Credit (FMCC) and its peers, the engine flags structural vulnerabilities that traditional quantitative screeners often overlook.
 
 Date: April 2026
 
-Thesis: Identifying structural risk-adjusted alpha through the synthesis of maturity bottlenecks and legal covenant strength.
+---
 
-1. Quantitative Signal: The 2026 Maturity Wall
-Using Note 9 (Debt and Commitments) from the 2026 10-K, my analysis identified a massive liquidity "bottleneck":
-•	2026 Maturity Peak: $51.8 billion in debt is contractually due in 2026. 
-•	Context: This represents a significant refinancing risk peak for the company's $141.4 billion total debt stack. 
-•	Risk: This "Maturity Wall" creates substantial pressure in the current interest rate environment, as nearly 37% of the debt matures within a single year.
+Phase 1: Single-Issuer Structural Risk (Ford Credit)
+
+The first phase of the engine focuses on a deep-dive analysis of Ford Motor Credit, utilizing NLP-driven legal parsing and liquidity schedule synthesis to identify a looming "Maturity Wall."
+
+1. The Quantitative Signal: The 2026 Maturity Wall
+
+Using Note 9 (Debt and Commitments) from the 10-K, the engine identified a massive liquidity "bottleneck":
+
+2026 Maturity Peak: $51.8 billion in debt is contractually due in 2026.
+
+Concentration Risk: This represents nearly 37% of the company's $141.4 billion total debt stack maturing within a single 12-month window.
+
+Refinancing Pressure: This concentration creates significant "Execution Risk" in a high-interest-rate environment.
 
 2. Qualitative Analysis: NLP-Driven Legal Due Diligence
-I utilized a custom NLP pipeline (Gemini) to parse Exhibit 4-C (Description of Securities) to determine if bondholders are protected during this 2026 peak:
-•	Covenant Strength Score: 3/10 (Weak)
-•	Key Vulnerabilities Identified:
-o	Porous Negative Pledge: The indenture includes a 5% "basket" of Consolidated Net Tangible Assets (CNTA) and broad carve-outs for securitizations, hedging, and export financing. 
-o	Lack of Event Risk Protection: The document contains no "Change of Control Put" or 101% repurchase clause, leaving bondholders exposed if the company is acquired. 
-o	No Cross-Default: The "Events of Default" are limited to specific note series; a default on one series does not necessarily trigger a default for others. 
-o	Unsecured Ranking: These are unsecured obligations, ranking equally with other unsecured debt but structurally subordinate to any secured debt.
+
+To determine if bondholders are protected during this peak, I utilized a custom NLP pipeline (Gemini) to parse Exhibit 4-C (Description of Securities). The engine flagged several "silent" risks:
+
+Porous Negative Pledge: Identifies a 5% "basket" of Consolidated Net Tangible Assets (CNTA) and broad carve-outs for securitizations, which can lead to structural subordination.
+
+Absent Event Risk Protection: The engine confirmed the lack of a "Change of Control Put", leaving bondholders exposed to leveraged buyout (LBO) risk without a 101% repurchase clause.
+
+Limited Cross-Default: "Events of Default" are siloed to specific note series, potentially allowing a "selective default" scenario without triggering an enterprise-wide collapse.
+
+3. Methodology: NLP & Indenture Parsing
+
+Unlike traditional screeners that rely on lagging metadata, this engine uses Large Language Models (LLMs) to perform real-time "Indenture Logic Extraction."
+
+Extraction: The model scans Exhibit 4-C for specific legal "triggers" (Negative Pledge, Cross-Default, Change of Control).
+
+Scoring: It assigns a Covenant Strength Score (1-10) based on the presence and "porosity" of these protections. Ford Credit received a 3/10 (Weak) due to the high volume of permitted liens and lack of event-risk puts.
 
 ![Ford Covenant Analysis](outputs/Ford_Covenant_Summary_Table.png)
 
@@ -30,14 +45,17 @@ The combination of a high-pressure $51.8B maturity wall and minimal legal protec
 
 ![Ford Maturity Wall 2026](outputs/ford_maturity_wall.png)
 
+---
+
 Phase 2: Sector-Wide Relative Value (Auto Captives)
+
 In this phase, the engine expands from single-issuer analysis to a systematic Sector Scanner. By comparing Ford Motor Credit (FMCC) against its primary peers—GM Financial (GMF) and Toyota Financial Services (TFS)—the objective is to identify relative value (RV) opportunities and structural mispricing across the auto captive landscape.
 
 Key Finding: Ford as a Risk Outlier
 
 The systematic scanner identifies Ford Credit as the primary risk outlier in the auto captive sector. While it offers the highest absolute yield at 5.8%, its Composite Risk Score (12.18) is significantly higher than GM Financial (8.50) and Toyota (3.80). This suggests that Ford is "expensive" on a risk-adjusted basis, as the yield premium does not sufficiently compensate for the underlying structural vulnerabilities.
 
-Trade Recommendation: Underweight F / Overweight GMF
+**Trade Recommendation: Underweight F / Overweight GMF**
 
 The Thesis: Ford Credit is currently "expensive" relative to its structural risk profile. A spread of only 40bps over GM Financial provides insufficient compensation for a $51.8B maturity bottleneck in 2026 and a significantly weaker 3/10 covenant score.
 
@@ -57,7 +75,10 @@ Risk Score Formula: Risk Score = [Normalized Maturity] + [Inverted Legal Strengt
 
 ![Auto Sector Relative Value Map](outputs/auto_captive_rv_map_fixed.png)
 
+---
+
 Phase 3: Interest Rate Sensitivity & Cash Flow Stress Test
+
 The final component of the engine quantifies the financial impact of the $51.8B maturity wall. This phase executes a "Refinancing Gap" analysis, calculating the marginal increase in annual interest expense if the 2026 debt stack—originally issued in a low-rate environment—must be refinanced at current market yields.
 
 The "Refinancing Gap" Analysis
@@ -78,11 +99,11 @@ Final Executive Conclusion: The "Triple Threat" Thesis
 
 By synthesizing the findings from all three phases, the engine produces a high-conviction Underweight recommendation on Ford Credit (FMCC) unsecured notes:
 
-Phase 1 (Structural): Identified a porous legal indenture (3/10 score) with no "Change of Control" protection.
+**Phase 1 (Structural)**: Identified a porous legal indenture (3/10 score) with no "Change of Control" protection.
 
-Phase 2 (Relative Value): Identified that Ford is a sector outlier, offering insufficient yield premium relative to GM Financial’s stronger liquidity.
+**Phase 2 (Relative Value)**: Identified that Ford is a sector outlier, offering insufficient yield premium relative to GM Financial’s stronger liquidity.
 
-Phase 3 (Sensitivity): Quantified a potential $1.55B annual cash flow drain driven by the 2026 maturity bottleneck.
+**Phase 3 (Sensitivity)**: Quantified a potential $1.55B annual cash flow drain driven by the 2026 maturity bottleneck.
 
 The "Quantamental" Edge: This automated pipeline allows for the rapid identification of structural subordination and refinancing risk that traditional screeners often miss, providing a systematic advantage in credit arbitrage.
 
