@@ -57,4 +57,33 @@ Risk Score Formula: Risk Score = [Normalized Maturity] + [Inverted Legal Strengt
 
 ![Auto Sector Relative Value Map](outputs/auto_captive_rv_map_fixed.png)
 
+Phase 3: Interest Rate Sensitivity & Cash Flow Stress Test
+The final component of the engine quantifies the financial impact of the $51.8B maturity wall. This phase executes a "Refinancing Gap" analysis, calculating the marginal increase in annual interest expense if the 2026 debt stack—originally issued in a low-rate environment—must be refinanced at current market yields.
+
+The "Refinancing Gap" Analysis
+
+Using a historical weighted average cost of debt (WACD) estimate of 4.5%, the engine simulated four refinancing scenarios ranging from a "Soft Landing" (5.5%) to a "Higher for Longer" stress scenario (8.5%).
+
+![Interest Stress Test](outputs/Interest_Stress_Test.png)
+
+Key Findings:
+
+Base Case (7.5% Refi Rate): Refinancing the 2026 wall at current BB/BBB- market rates would trigger an additional $1.55 Billion in annual interest expense.
+
+Cash Flow Erosion: This $1.55B jump represents a significant "hidden" headwind to Free Cash Flow (FCF) that may not be fully priced into current equity or credit spreads.
+
+Liquidity Strain: For a firm with ~15% liquidity coverage, a billion-dollar shift in non-discretionary cash outflow creates a "tightening" effect that limits capital allocation for EV transition projects.
+
+Final Executive Conclusion: The "Triple Threat" Thesis
+
+By synthesizing the findings from all three phases, the engine produces a high-conviction Underweight recommendation on Ford Credit (FMCC) unsecured notes:
+
+Phase 1 (Structural): Identified a porous legal indenture (3/10 score) with no "Change of Control" protection.
+
+Phase 2 (Relative Value): Identified that Ford is a sector outlier, offering insufficient yield premium relative to GM Financial’s stronger liquidity.
+
+Phase 3 (Sensitivity): Quantified a potential $1.55B annual cash flow drain driven by the 2026 maturity bottleneck.
+
+The "Quantamental" Edge: This automated pipeline allows for the rapid identification of structural subordination and refinancing risk that traditional screeners often miss, providing a systematic advantage in credit arbitrage.
+
 
