@@ -107,4 +107,12 @@ By synthesizing the findings from all three phases, the engine produces a high-c
 
 The "Quantamental" Edge: This automated pipeline allows for the rapid identification of structural subordination and refinancing risk that traditional screeners often miss, providing a systematic advantage in credit arbitrage.
 
+Disclaimer
+
+Not Investment Advice: The contents of this repository, including all code, analysis, and conclusions, are provided for informational and educational purposes only. This project represents a technical demonstration of quantamental credit modeling and does not constitute a recommendation to buy, sell, or hold any security or financial instrument.
+
+Data Accuracy: While the analysis utilizes primary source data from SEC filings (10-K, Exhibit 4-C), the author makes no representations as to the absolute accuracy or completeness of the data at any given time. Market conditions and credit profiles are subject to rapid change.
+
+Personal Capacity: This project was developed in a personal capacity and does not reflect the views, strategies, or opinions of any past or current employers. The author shall not be held liable for any financial losses or damages resulting from the use of this information.
+
 
